@@ -6,14 +6,14 @@ This project detects and counts different types of vehicles (bus, car, auto-rick
 
 # 📂 Project Structure
 
-'''
+```
   ├── sender_arduino.ino       # Arduino sketch for sending data
   ├── reciever_arduino.ino     # Arduino sketch for receiving data
   ├── send_arduino.py          # Python script for YOLO-based vehicle detection
   ├── coco1.txt                # Class labels for YOLO
   ├── best.pt                  # Trained YOLO model (Not included, download separately)
   ├── id4.mp4                  # Video file for object detection
-'''
+```
 
 
 # ⚡ Requirements
