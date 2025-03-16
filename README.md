@@ -31,8 +31,9 @@ Camera (Optional, if using live feed)
 Python 3.x installed
 
 Install the required Python libraries:
-
+```
 pip install opencv-python pandas ultralytics cvzone pyserial
+```
 
 Arduino IDE with ESP8266/ESP32 board support (if using ESP-NOW)
 
@@ -42,6 +43,9 @@ Arduino IDE with ESP8266/ESP32 board support (if using ESP-NOW)
 ## Step 1: Upload Arduino Sketches
 
 Connect the Receiver Arduino and open reciever_arduino.ino in Arduino IDE.
+```
+Dump the reciever_arduino.ino and sender_arduino.ino in arduino ide
+```
 
 Select the correct board and COM port, then upload the code.
 
@@ -54,8 +58,9 @@ Repeat the same for Sender Arduino, using sender_arduino.ino.
 Ensure best.pt (YOLO model) is present in the project folder.
 
 Run the Python script to start vehicle detection:
-
+```
 python send_arduino.py
+```
 
 The script will process the video and send vehicle counts to Arduino.
 
@@ -72,8 +77,9 @@ You should see real-time vehicle counts updating.
 ## ✅ Issue: Serial port error
 
 Ensure the correct COM port is set in send_arduino.py:
-
+```
 ser = serial.Serial('COM3', 115200)  # Change 'COM3' if needed
+```
 
 ## ✅ Issue: No YOLO model found
 
